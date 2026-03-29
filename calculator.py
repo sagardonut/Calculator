@@ -1,10 +1,17 @@
+# Multiply function
+def multiply(a, b):
+    return a * b
 
-print("Simple Calculator")
-print("Operations: +  -  *  /")
+# Divide function (handle divide by zero)
+def divide(a, b):
+    if b == 0:
+        return "Error: Cannot divide by zero!"
+    return a / b
 
-choice = input("Enter operation: ")
 
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
+# Test the functions
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-#write your function on top and run you function below
+print("Multiplication:", multiply(num1, num2))
+print("Division:", divide(num1, num2))
